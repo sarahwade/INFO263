@@ -1,0 +1,178 @@
+/* main elements style */
+.page {
+  margin: 20px;
+}
+
+.pageHeader {
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+
+.contentSection {
+  padding: 20px;
+  background-color: lightyellow;
+}
+
+.footer {
+  grid-row-start: 3;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: cadetblue;
+  padding: 20px 15px 20px 15px;
+}
+
+
+/* navigation menu */
+.navMenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navMenu li {
+  float: left;
+}
+
+.navMenu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navMenu li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.navMenu .active {
+  background-color: lightpink;
+}
+
+
+/* main page */
+.doublePanel{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sumPanel,
+.costsPanel {
+  padding: 20px;
+  width: 48%; /* Each panel takes up 45% of the width */
+  background-color: pink; /* Light background color for contrast */
+  border: 3px solid #ccc; /* Border around the panels */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.dropVehicle {
+  position: relative;
+  display: inline-block;
+  margin: 10px 2px;
+}
+
+.dropVehicle .select {
+  padding: 10px 10px; /* Increase padding for a bigger button */
+  border: 2px solid black; /* Slightly thicker border */
+  border-radius: 5px; /* More rounded corners */
+  background-color: lightgray; /* Background color */
+  cursor: pointer;
+}
+
+.sumP{
+  font-weight: bold;
+  padding: 2px;
+}
+
+.valueP{
+  color: green;
+}
+
+
+/* pagination */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.pageItem {
+  margin: 0 5px;
+}
+
+.pageLink {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  color: pink;
+  text-decoration: none;
+}
+
+.pageLink:hover {
+  background-color: #f0f0f0;
+}
+
+.active .pageLink {
+  background-color: lightblue;
+  color: white;
+  border: 1px solid lightblue;
+}
+
+/*panels with pagination*/
+.vehiclePanel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+  gap: 10px; /* Space between grid items */
+  padding: 20px; /* Padding around the panel */
+}
+
+.vehicleCard {
+  background: #f9f9f9; /* Light background for each card */
+  border: 1px solid #ccc; /* Border around the card */
+  border-radius: 8px; /* Rounded corners */
+  padding: 16px; /* Padding inside each card */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+
+
+.vehicleCard h3 {
+  background-color: #fff; /* White background for the number plate */
+  color: #000; /* Black text color */
+  padding: 10px 15px; /* Padding for spacing */
+  border: 2px solid #000; /* Black border */
+  border-radius: 5px; /* Rounded corners */
+  font-family: 'Trebuchet MS', sans-serif, monospace; /* Monospaced font for a classic number plate look */
+  text-align: center; /* Center the text */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 10px 0; /* Margin for spacing from other elements */
+  letter-spacing: 2px;
+}
+
+.vehicleCard img {
+  width: 100%; /* Make the image fill the width of the card */
+  #height: auto; /* Maintain aspect ratio */
+  height: 150px;
+  border-radius: 8px; /* Match the card's rounded corners */
+  max-height: 150px; /* Optional: set a max height for the images */
+  object-fit: cover; /* Crop the image to fit, preserving aspect ratio */
+}
+
+
+
+
+
+
